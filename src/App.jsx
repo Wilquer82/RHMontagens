@@ -5,15 +5,7 @@ function App() {
 
   return (
     <div className="main">
-      <header style={{
-        display:"flex", 
-        position: "fixed", 
-        top: "0", 
-        left: "0",
-        margin: "0 1rem",
-        justifyContent:"space-between",
-        width: "98%",
-        }}>
+      <header className="header">
           <img src={RHLogo} className="logo" alt="RHlogo" />
           <h2 className="logo" >Nossa História</h2>
           <h2 className="logo" >Atuação</h2>
