@@ -1,19 +1,20 @@
-import RHLogo from './assets/RHMONTAGENSLOGO.jpg'
+import RHLogo from './assets/logoRH.jpeg'
 import './App.css'
 
 function App() {
 
   return (
-    <div className="main">
+    <div >
       <header className="header">
           <img src={RHLogo} className="logo" alt="RHlogo" />
-          <h2 className="logo" >Nossa História</h2>
-          <h2 className="logo" >Atuação</h2>
-          <h2 className="logo" >Serviços</h2>
-          <h2 className="logo" >Contato</h2>
+          <a><h2>Nossa História</h2></a>
+          <a><h2>Atuação</h2></a>
+          <a><h2>Serviços</h2></a>
+          <a><h2>Contato</h2></a>
       </header>
-      <h1>RH Montagens Industriais</h1>
-
+      <div className="main">
+        <h1>RH Montagens Industriais</h1>
+      </div>
     </div>
   )
 }
