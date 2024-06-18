@@ -23,7 +23,7 @@
   background: url("./assets//shiny-silver-metallic-textured-background.jpg");
   background-repeat: repeat-y;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   justify-content: space-evenly;
