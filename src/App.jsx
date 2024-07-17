@@ -16,15 +16,17 @@ function App() {
           <a href="#Contato"><h2 className="h2">CONTATO</h2></a>
       </header>
       <div className="main">
-        
-        <video width={"80%"} height={"auto"} autoPlay loop muted style={{borderRadius:"2rem", opacity:".7", marginTop:".5rem"}}>
-            <source src={Movie} type="video/mp4"/>
-        </video>
-        <img src={Big} width={"80%"} height={670} style={{borderRadius:"2rem", opacity:"10%", position:"absolute", zIndex:"5", top:"7rem", left: "9.5rem"}}/>
+        <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <video width={"80%"} height={"auto"} autoPlay loop muted style={{borderRadius:"2rem", opacity:".7", marginTop:".5rem"}}>
+              <source src={Movie} type="video/mp4"/>
+          </video>
+          <img src={Big} width={"80%"} height={"auto"} 
+            style={{borderRadius:"2rem", opacity:"10%", zIndex:"5", position: "absolute"}}/>
+        </div>
         <br/>
         <br/>
-        <div style={{borderColor:"#6067e6",  borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
-          <h2 id="nossaHistoria"style={{textAlign: "left", marginLeft:"20%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Nossa História</h2>
+        <div id="nossaHistoria" style={{borderColor:"#6067e6",  borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
+          <h2 style={{textAlign: "left", marginLeft:"20%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Nossa História</h2>
           <br/>
           <p style={{fontSize: "1.2em",textAlign:"justify", width:"50%", marginLeft:"25%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
               A RH Montagens Industriais foi fundada em 2014 por Richard Heleno da Cruz, com o objetivo de prestação de serviços em maquinas e equipamentos paras as mais variadas finalidades, oferecendo sempre qualidade garantida. profissionais experientes, 
@@ -34,8 +36,8 @@ function App() {
         </div>
         <br/>
         <br/>
-        <div style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
-          <h2 id="Atuacao"style={{textAlign: "left", marginLeft:"20%  ", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Atuação</h2>
+        <div id="Atuacao" style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
+          <h2 style={{textAlign: "left", marginLeft:"20%  ", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Atuação</h2>
           <br/>
           <p style={{fontSize: "1.2em",textAlign:"justify", width:"50%", marginLeft:"25%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
           A Solução RH é composta por uma linha de equipamentos, desenvolvida com os mais recentes conceitos tecnológicos ligados ao setor de Alimentos e Químicos, possuindo ainda a disponibilidade de aprimoramentos e desenvolvimentos 
@@ -45,8 +47,8 @@ function App() {
         </div>
         <br/>
         <br/>
-        <div style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
-          <h2 id="Servicos"style={{textAlign: "left", marginLeft:"20%  ", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Serviços</h2>
+        <div id="Servicos" style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
+          <h2 style={{textAlign: "left", marginLeft:"20%  ", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Serviços</h2>
           <br/>
           <p style={{fontSize: "1.2em",textAlign:"justify", width:"60%", marginLeft:"25%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
           <i className="bi bi-check-lg"/>&nbsp;Montagem e Desmontagem de equipamentos, tubulações e inter ligações em todas as ligas metálicas<br/>
@@ -97,35 +99,35 @@ function App() {
          Assistência técnica;
          Movimentação de cargas (Munks) e (PTA)
         História
-A RH Montagens Industriais foi fundada em 2014 por Richard Heleno da Cruz, com o objetivo de prestação de serviços em maquinas e equipamentos paras as mais variadas finalidades, oferecendo sempre qualidade garantida. profissionais experientes, excelencia no atendimento e execução, além de conhecimento técnico apurado. Nesses anos atuando no mercado, muito foi conquistado e melhorado, sempre com o auxílio de clientes e cooperadores
-Política Ambiental
-Contamos com tratamento de 100% de todos nossos resíduos químicos e biológicos, seleção de descarte de resíduos de modo eficiente, colaborando e respeitando nosso meio ambiente e qualidade de vida
-Alguns de Nossos Principais Clientes:
-GELITA
-Improving Quality of Life
-ConduPasqua
-Condutores Elétricos Tintas e Solventes
-Maza
-www
-Alguns de Nossos Serviços e Produtos:
-* Montagem e Desmontagem de equipamentos, tubulações e inter ligações em todas as ligas metálicas;
-Montagem completa da linha de produção: Fabricação de quipamentos de processo de transporte e estocagem;
-* Fabricação de equipamentos e manutenção de usinas:
-* Manutenção em geral de equipamentos diversos nas instalações dos clientes e também em nossas instalações:
-* Soldas especials;
-Plantas industriais completas;
-Tanques de Processo
-Tanques Agitadores
-Roscas
-Transportadoras
-* Dosadores
-Silos
-Elevadores de
-Caneca
-Peneiras Vibratórias
-Peneiras Rotativas
-Moinho de Facas
-Esteiras Tranportadoras Misturadores
+        A RH Montagens Industriais foi fundada em 2014 por Richard Heleno da Cruz, com o objetivo de prestação de serviços em maquinas e equipamentos paras as mais variadas finalidades, oferecendo sempre qualidade garantida. profissionais experientes, excelencia no atendimento e execução, além de conhecimento técnico apurado. Nesses anos atuando no mercado, muito foi conquistado e melhorado, sempre com o auxílio de clientes e cooperadores
+        Política Ambiental
+        Contamos com tratamento de 100% de todos nossos resíduos químicos e biológicos, seleção de descarte de resíduos de modo eficiente, colaborando e respeitando nosso meio ambiente e qualidade de vida
+        Alguns de Nossos Principais Clientes:
+        GELITA
+        Improving Quality of Life
+        ConduPasqua
+        Condutores Elétricos Tintas e Solventes
+        Maza
+        www
+        Alguns de Nossos Serviços e Produtos:
+        * Montagem e Desmontagem de equipamentos, tubulações e inter ligações em todas as ligas metálicas;
+        Montagem completa da linha de produção: Fabricação de quipamentos de processo de transporte e estocagem;
+        * Fabricação de equipamentos e manutenção de usinas:
+        * Manutenção em geral de equipamentos diversos nas instalações dos clientes e também em nossas instalações:
+        * Soldas especials;
+        Plantas industriais completas;
+        Tanques de Processo
+        Tanques Agitadores
+        Roscas
+        Transportadoras
+        * Dosadores
+        Silos
+        Elevadores de
+        Caneca
+        Peneiras Vibratórias
+        Peneiras Rotativas
+        Moinho de Facas
+        Esteiras Tranportadoras Misturadores
       </h1>
     </div>
   )
