@@ -33,12 +33,12 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 1rem;
   line-height: 1.1;
 }
 
-.h2{
-  font-size: .95em;
+h2{
+  font-size: 1rem;
 }
 
 button {
@@ -71,4 +71,25 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: .7rem;
+    
+  }
+  
+  h2{
+    font-size: .7rem;
+  }
+  
+  p{
+    font-size: .7rem;
+
+  }
+
+  #gif{
+    display: none;
+  }
+
 }

@@ -62,3 +62,14 @@
 .read-the-docs {
   color: #888;
 }
+
+
+@media (max-width: 480px) {
+  .logo{
+    height: 3rem;
+  }
+
+  .main{
+    margin-top: 4.4rem;
+  }
+}

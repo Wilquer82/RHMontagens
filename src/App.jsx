@@ -10,10 +10,10 @@ function App() {
     <div >
       <header className="header">
           <img src={RHLogo} className="logo" alt="RHlogo" />
-          <a href="#nossaHistoria"><h2 className="h2">NOSSA HISTÓRIA</h2></a>
-          <a href="#Atuacao"><h2 className="h2">ATUAÇÃO</h2></a>
-          <a href="#Servicos"><h2 className="h2">SERVIÇOS</h2></a>
-          <a href="#Contato"><h2 className="h2">CONTATO</h2></a>
+          <a href="#nossaHistoria"><h1 className="h2">NOSSA HISTÓRIA</h1></a>
+          <a href="#Atuacao"><h1 className="h2">ATUAÇÃO</h1></a>
+          <a href="#Servicos"><h1 className="h2">SERVIÇOS</h1></a>
+          <a href="#Contato"><h1 className="h2">CONTATO</h1></a>
       </header>
       <div className="main">
         <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
@@ -28,7 +28,7 @@ function App() {
         <div id="nossaHistoria" style={{borderColor:"#6067e6",  borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
           <h2 style={{textAlign: "left", marginLeft:"20%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Nossa História</h2>
           <br/>
-          <p style={{fontSize: "1.2em",textAlign:"justify", width:"50%", marginLeft:"25%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
+          <p style={{textAlign:"justify", width:"80%", marginLeft:"10%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
               A RH Montagens Industriais foi fundada em 2014 por Richard Heleno da Cruz, com o objetivo de prestação de serviços em maquinas e equipamentos paras as mais variadas finalidades, oferecendo sempre qualidade garantida. profissionais experientes, 
               excelencia no atendimento e execução, além de conhecimento técnico apurado. Nesses anos atuando no mercado, muito foi conquistado e melhorado, sempre com o auxílio de clientes e cooperadores
               Contamos com tratamento de 100% de todos nossos resíduos químicos e biológicos, seleção de descarte de resíduos de modo eficiente, colaborando e respeitando nosso meio ambiente e qualidade de vida
@@ -39,7 +39,7 @@ function App() {
         <div id="Atuacao" style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
           <h2 style={{textAlign: "left", marginLeft:"20%  ", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Atuação</h2>
           <br/>
-          <p style={{fontSize: "1.2em",textAlign:"justify", width:"50%", marginLeft:"25%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
+          <p style={{textAlign:"justify", width:"80%", marginLeft:"10%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
           A Solução RH é composta por uma linha de equipamentos, desenvolvida com os mais recentes conceitos tecnológicos ligados ao setor de Alimentos e Químicos, possuindo ainda a disponibilidade de aprimoramentos e desenvolvimentos 
           expansivos à medida que as necessidades do cliente aumentam, tanto para equipamentos como para sistemas. Aplicando tecnologia própria, a RH estabelece relação direta com seus clientes, apresentando como vantagem 
           competitiva o domínio técnico sobre a instalação e operação de seus equipamentos. A principal funcionalidade do sistema é primeiramente garantir que intervenções humanas errôneas e inadequadas comprometam a vida útil do equipamento, imprimindo ao mesmo uma operação que venha a danificar a máquina e ou o sistema.
@@ -50,7 +50,7 @@ function App() {
         <div id="Servicos" style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
           <h2 style={{textAlign: "left", marginLeft:"20%  ", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>Serviços</h2>
           <br/>
-          <p style={{fontSize: "1.2em",textAlign:"justify", width:"60%", marginLeft:"25%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
+          <p style={{textAlign:"justify", width:"80%", marginLeft:"10%", color: "#dfdfdf", textShadow:"1px 1px #646cffaa"}}>
           <i className="bi bi-check-lg"/>&nbsp;Montagem e Desmontagem de equipamentos, tubulações e inter ligações em todas as ligas metálicas<br/>
           <i className="bi bi-check-lg"/> &nbsp;Montagem completa da linha de produção: Fabricação de quipamentos de processo de transporte e estocagem<br/>
           <i className="bi bi-check-lg"/> &nbsp;Fabricação de equipamentos e manutenção de usinas<br/>
@@ -68,7 +68,11 @@ function App() {
           <i className="bi bi-check-lg"/> &nbsp;Peneiras Rotativas<br/>
           <i className="bi bi-check-lg"/> &nbsp;Moinho de Facas<br/>
           <i className="bi bi-check-lg"/> &nbsp;Esteiras Tranportadoras Misturadores<br/>
-          <img src={Animacao} width={500} autoPlay style={{position: "absolute", zIndex:"10", top:"140rem", right: "15rem", borderRadius:"1rem" }}/>
+          <img id="gif" 
+            src={Animacao} 
+            width={500} 
+            autoPlay 
+            style={{position: "absolute", zIndex:"10", top:"105rem", right: "15rem", borderRadius:"1rem" }}/>
           </p>
         </div>
         <br/>
