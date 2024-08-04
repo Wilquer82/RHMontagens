@@ -157,7 +157,8 @@ function App() {
         <img 
           src={RHLogo} 
           className="logo" 
-          alt="RHlogo"  
+          alt="RHlogo"
+          title="RH Montagens"
           onClick={ () => {
             setSite((old) => !old);
           }}
