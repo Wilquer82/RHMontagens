@@ -1,19 +1,36 @@
 import RHLogo from './assets/logoRH.jpeg';
+import Munck from './assets/munck.png';
 import Big from './assets/logoFundoGRD.jpeg';
 import Animacao from './assets/animacao.gif';
 import Movie from './assets/solda.mp4';
-import './App.css'
+import './App.css';
+import { useState } from "react";
+
 
 function App() {
 
+  const [site, setSite] = useState(true);
+
+
   return (
-    <div >
+    <>
+    { site ? (
+    <div>
       <header className="header">
           <img src={RHLogo} className="logo" alt="RHlogo" />
           <a href="#nossaHistoria"><h1 className="h2">NOSSA HISTÓRIA</h1></a>
           <a href="#Atuacao"><h1 className="h2">ATUAÇÃO</h1></a>
           <a href="#Servicos"><h1 className="h2">SERVIÇOS</h1></a>
           <a href="#Contato"><h1 className="h2">CONTATO</h1></a>
+          <img 
+            src={Munck} 
+            className="logo" 
+            alt="Munck"
+            title="Locação de Munck"
+            onClick={ () => {
+              setSite((old) => !old);
+            }}
+          />
       </header>
       <div className="main">
         <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
@@ -134,6 +151,44 @@ function App() {
         Esteiras Tranportadoras Misturadores
       </h1>
     </div>
+    ) : (
+      <>
+       <header className="header">
+        <img 
+          src={RHLogo} 
+          className="logo" 
+          alt="RHlogo"  
+          onClick={ () => {
+            setSite((old) => !old);
+          }}
+        />
+      </header>
+      <div style={{backgroundColor: "#dfdfdf", width:"100%", height: "100%"}}>
+        <div id="Atuacao" style={{borderColor:"#6067e6", borderStyle:"outset", width:"80%", marginLeft:"10%"}}>
+          <h2 style={{textAlign: "left", marginLeft:"20%  ", color: "Black", textShadow:"1px 1px #646cffaa"}}>Serviço de Munck</h2>
+          <br/>
+          <p style={{textAlign:"justify", width:"80%", marginLeft:"10%", color: "black", textShadow:"1px 1px #646cffaa"}}>
+          O Caminhão Articulado (Munck) é um equipamento utilizado para içamento de carga ou remoção e transporte de máquinas pesadas. 
+          A empresa possui um Caminhão Munck disponível com diversas capacidades de carga, desenvolvendo trabalhos de transportes de maquinas,
+           transportes rodoviários convencionais e especiais, movimentação e elevação de cargas com grande peso e dimensão, auxílio em obras, 
+           coberturas, fechamentos, montagem de pré-fabricados, entre outros serviços que necessitem deste equipamento. 
+           </p>
+          <br/>
+          <p style={{textAlign:"justify", width:"80%", marginLeft:"10%", color: "black", textShadow:"1px 1px #646cffaa"}}>
+
+          Nosso diferencial são os profissionais altamente treinados e capacitados, executando os serviços com total segurança e oferecendo as melhores soluções em tempo hábil. Os trabalhos são desenvolvidos em diferentes localidades como, grande São Paulo, São José dos Campos, Guarulhos, entre outras cidades. Sempre voltado para a área de construção civil.  
+          </p>
+
+          <br/>
+          <p style={{textAlign:"justify", width:"80%", marginLeft:"10%", color: "black", textShadow:"1px 1px #646cffaa"}}>
+
+          A empresa possui parceria com várias outras empresas, as quais abrangem todo serviço de içamento, transporte e responsabilidade civil.  Em breve outros equipamentos disponíveis: Guindaste, Plataforma Elevatória, etc…
+          </p>
+        </div>
+      </div>
+      </>
+    )}
+    </>
   )
 }
 
